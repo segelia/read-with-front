@@ -7,6 +7,7 @@ import Favourites from './components/Favourites';
 import Mybooks from './components/MyBooks';
 import Login from './components/Login';
 import Bookprofile from './components/Bookprofile';
+import Register from './components/Register'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/my-books" element={<Mybooks />} />
         <Route path="/login" element={<Login />} />
         <Route path="/book" element={<Bookprofile />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );

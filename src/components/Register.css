@@ -1,4 +1,4 @@
-.login-container {
+.register-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: #ffffff;
   }
   
-  .login-box {
+  .register-box {
     background-color: #ead7c0;
     padding: 2rem;
     border-radius: 8px;
@@ -16,20 +16,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .login-box h2 {
+  .register-box h2 {
     margin-bottom: 1.5rem;
     font-size: 24px;
     color: #4d392d;
   }
-
-  .login-box p {
-    margin: 1rem 0;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #4d392d;
-  }
   
-  .login-box input {
+  .register-box input {
     display: block;
     width: 100%;
     margin: 0.75rem 0;
@@ -40,41 +33,19 @@
     box-sizing: border-box;
   }
   
-  .login-button,
   .register-button {
     width: 100%;
+    margin-top: 1rem;
     padding: 0.75rem;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     font-size: 16px;
     background-color: #8c6d52;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-button.alt {
-    background-color: #b1987e;
-  }
-  
-  .login-button:hover,
-  .register-button:hover {
-    background-color: #5c4634;
-  }
-  
+    color: white
+  }  
+
   .note {
-    margin-top: 1rem;
-    font-size: 0.85rem;
-    color: #555;
-  }
-  
-  .contact-info {
-    margin-top: 3rem;
+    font-weight: bold;
     font-size: 1rem;
-    color: #4d392d;
-    background-color: #c3a47d;
-    padding: 1rem 2rem;
-    border-radius: 4px;
   }
-  
