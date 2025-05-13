@@ -1,12 +1,13 @@
 import React from 'react';
 import './Navbar.css';
 import { Heart, BookOpen, User, Search } from 'lucide-react';
+import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <span className="logo">ReadWith</span>
+        <Link to="/" className="logo">ReadWith</Link>
         <div className="navbar-search">
           <input type="text" placeholder="Szukaj książki..." />
           <button>
@@ -16,18 +17,18 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-right">
-        <div className="nav-item">
+        <Link to="/favourites" className="nav-item">
           <Heart size={20} />
           <span>Ulubione</span>
-        </div>
-        <div className="nav-item">
+        </Link>
+        <Link to="/my-books" className="nav-item">
           <BookOpen size={20} />
           <span>Moje książki</span>
-        </div>
-        <div className="nav-item">
+        </Link>
+        <Link to="/login" className="nav-item">
           <User size={20} />
           <span>Zaloguj się</span>
-        </div>
+        </Link>
       </div>
     </nav>
   );

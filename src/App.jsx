@@ -1,46 +1,25 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+// src/App.jsx
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Adbanner from './components/Adbanner';
-import Book from './components/Book';
-import Footer from './components/Footer';
-
-
-const Card = ({title, rating}) => {
-  const [hasLiked, setHasLiked] = useState(false);
-  useEffect(() => {
-    console.log(`${title} has been ${hasLiked}`)
-  }, [hasLiked]);
-  return (
-    <div className = "card">
-      <h2>{title}</h2>
-      <button onClick={()=> setHasLiked(!hasLiked)}>
-        {hasLiked ? "Liked!" : "Like"}
-      </button>
-    </div>
-  );
-};
+import Home from './components/Home';
+import Favourites from './components/Favourites';
+import Mybooks from './components/MyBooks';
+import Login from './components/Login';
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Adbanner />
-      <div className='separator'></div>
-      <h1 className='book-grid-title'>Books recently added by your friends</h1>
-      <div className='book-grid'>
-        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
-        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
-        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
-        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
-        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
-        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
-      </div>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favourites" element={<Favourites />} />
+        <Route path="/my-books" element={<Mybooks />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/test" element={<h1>Test route root</h1>} />
+      </Routes>
     </div>
-
   );
 };
 
-
-export default App
+export default App;
