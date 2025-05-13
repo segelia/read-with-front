@@ -1,4 +1,12 @@
+body, html, #root, .Home {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .navbar {
+    margin: 0;
+    padding: 0;
     width: 100%;
     background-color: #a7896b;
     display: flex;

@@ -1,6 +1,7 @@
 import Adbanner from './Adbanner';
 import Book from './Book';
 import Footer from './Footer';
+import './Home.css';
 
 const Home = () => {
   return (
