@@ -4,9 +4,10 @@ body, html, #root, .App {
   width: 100%;
 }
 
-.card-container {
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Max 4 columns */
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem;
 }

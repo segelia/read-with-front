@@ -1,0 +1,20 @@
+.book {
+    width: 150px;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .book-title {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  

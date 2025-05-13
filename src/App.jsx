@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar';
 import Adbanner from './components/Adbanner';
+import Book from './components/Book';
 
 
 const Card = ({title, rating}) => {
@@ -24,10 +25,14 @@ const App = () => {
     <div>
       <Navbar />
       <Adbanner />
-      <div className='card-container'>
-        <Card title="My year of rest and relaxation" rating="5"/>
-        <Card title="Lolita" rating = "3"/>
-        <Card title="The old man and the sea" rating ="4"/>
+      <div className='book-grid'>
+        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
+        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
+        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
+        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
+        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
+        <Book title="Wschód słońca w dniu dozynek" imageUrl="src/assets/wschod-slonca-w-dniu-dozynek-b-iext179943591.jpg"/>
+        
       </div>
     </div>
 
