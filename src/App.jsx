@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar';
 
 
 const Card = ({title, rating}) => {
@@ -21,10 +20,13 @@ const Card = ({title, rating}) => {
 
 const App = () => {
   return (
-    <div className='card-container'>
-      <Card title="My year of rest and relaxation" rating="5"/>
-      <Card title="Lolita" rating = "3"/>
-      <Card title="The old man and the sea" rating ="4"/>
+    <div>
+      <Navbar />
+      <div className='card-container'>
+        <Card title="My year of rest and relaxation" rating="5"/>
+        <Card title="Lolita" rating = "3"/>
+        <Card title="The old man and the sea" rating ="4"/>
+      </div>
     </div>
 
   );
