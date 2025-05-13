@@ -1,0 +1,14 @@
+.adbanner {
+    width: 90%;
+    height: 150px;
+    background-color: #e0d5ca;
+    border: 2px dashed #8a7b6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    font-size: 1.2rem;
+    color: #4a3b2f;
+    font-size: large;
+  }
+  

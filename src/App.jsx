@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar';
+import Adbanner from './components/Adbanner';
 
 
 const Card = ({title, rating}) => {
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <Adbanner />
       <div className='card-container'>
         <Card title="My year of rest and relaxation" rating="5"/>
         <Card title="Lolita" rating = "3"/>
